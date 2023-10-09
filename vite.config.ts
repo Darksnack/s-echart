@@ -2,17 +2,18 @@
  * @Author:
  * @Date: 2023-10-08 13:21:53
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-10-09 13:27:25
+ * @LastEditTime: 2023-10-09 14:52:47
  * @Description: 请填写简介
  */
 import vue from "@vitejs/plugin-vue";
-import { defineConfig } from "vite";
 import { resolve } from "path";
+import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	base: "./", // 设置打包路径
-	plugins: [vue()],
+	plugins: [vue(), dts()],
 	resolve: {
 		// 配置路径别名
 		alias: {

@@ -2,7 +2,7 @@
  * @Author: 
  * @Date: 2023-10-08 13:21:53
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-10-09 11:32:08
+ * @LastEditTime: 2023-10-09 14:56:28
  * @Description: 请填写简介
 -->
 <script setup lang="ts">
@@ -78,7 +78,7 @@ onMounted(() => {
 });
 watch(
 	() => textarea_value.value,
-	(newVlaue, oldValue) => {
+	(newVlaue) => {
 		option.value = JSON.parse(newVlaue);
 	}
 );
